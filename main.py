@@ -1,6 +1,6 @@
 import openai
 
-open.api_key = "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"
+openai.api_key = "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"
 
 # create function that you'll call every time there's a new completion
 def chat_with_gpt(prompt):
@@ -22,5 +22,6 @@ if __name__ == "__main__":
         if user_input.lower() in ["quit", "exit", "bye"]:
             break
 
+        # print response with each input
         response = chat_with_gpt(user_input)
         print("Chatbot: ", response)
